@@ -1,6 +1,10 @@
 html {
   scroll-behavior: smooth; }
 
+.title {
+  text-shadow: 1px 1px 5px gray;
+}
+
 .timeline {
   padding: 1rem 0; }
 
@@ -194,5 +198,10 @@ footer a:not(.nav-link) {
 .icon:hover{
   transform: scale(1.2);
   transition: 200ms;
-  opacity: calc(100% - 40%);
+  opacity: calc(100% - 40%); }
+
+.back{
+  width: 40px;
+  height: 48px;
+  border-radius: 30px;
 }

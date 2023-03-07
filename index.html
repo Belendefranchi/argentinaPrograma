@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <div class="container text-center text-lg-left py-3">
+      <div class="container text-center text-lg-left py-3" id="top">
         <nav>
           <ul class="nav justify-content-end gap-2 pe-2">
             <li class="nav-item">
@@ -47,10 +47,10 @@
                   <img class="img-fluid shadow-sm" src="images/avatar.jpeg" width="250" height="250">
               </div>
               <div class="col-lg-8 col-md-7 text-center text-md-start">
-                <h1>María Belén De Franchi</h1>
-                <h2>Administrador de sistemas de TI & Web Developer</h2>
+                <h1 class="title">María Belén De Franchi</h1>
+                <h2 class="title">Administrador de sistemas de TI & Web Developer</h2>
                 <a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="cv.pdf" target="_blank">Descargar CV</a>
-                <a class="btn btn-info shadow-sm mt-1" href="#contact">Contacto</a>
+                <a class="btn btn-warning shadow-sm mt-1" href="#contact">Contacto</a>
               </div>
             </div>
           </div>
@@ -63,8 +63,8 @@
               </div>
               <div class="col-md-5 offset-md-1">
                 <div class="row mt-2">
-                  <div class="col-sm-4 pb-1">Edad</div>
-                  <div class="col-sm-8 pb-1 text-secondary">36</div>
+                  <div class="col-sm-4 pb-1">Idioma</div>
+                  <div class="col-sm-8 pb-1 text-secondary">Inglés B2 (Intermedio)</div>
                   <div class="col-sm-4 pb-1">Email</div>
                   <div class="col-sm-8 pb-1 text-secondary">belendefranchi@gmail.com</div>
                   <div class="col-sm-4 pb-1">Teléfono</div>
@@ -83,17 +83,17 @@
               <div class="col-md-6">
                 <div class="mb-2"><span>HTML + CSS</span>
                   <div class="progress my-1">
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated scroll-content fadeRight" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                    <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated scroll-content fadeRight" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
                   </div>
                 </div>
                 <div class="mb-2"><span>Javascript</span>
                   <div class="progress my-1">
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated scroll-content fadeRight" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+                    <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated scroll-content fadeRight" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
                   </div>
                 </div>
                 <div class="mb-2"><span>React JS</span>
                   <div class="progress my-1">
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated scroll-content fadeRight" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+                    <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated scroll-content fadeRight" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
                   </div>
                 </div>
               </div>
@@ -194,13 +194,14 @@
               </div>
             </div>
           </div>
+          <!-- -----------------------------------------------SECCIÓN DE CONTACTO----------------------------------------------- -->
           <hr class="d-print-none"/>
-          <div class="contact-section px-3 px-lg-4 pb-4 scroll-content fadeTop" id="contact">
+          <div class="contact-section d-flex flex-column px-3 px-lg-4 pb-4 scroll-content fadeTop" id="contact">
             <h2 class="h3 text mb-3">Contacto</h2>
             <div class="row">
               <div class="col-md-7 d-print-none">
                 <div class="my-2">
-                  <form action="mailto:belendefranchi@gmail.com" method="post" enctype="text/plain">
+                  <form class="d-flex flex-column" action="mailto:belendefranchi@gmail.com" method="post" enctype="text/plain">
                   <div class="row">
                       <div class="col-6">
                         <label for="name">Nombre y apellido:</label>
@@ -209,66 +210,66 @@
                       <div class="col-6">
                         <label for="email">E-mail:</label>
                           <input class="form-control text-decoration-none" type="email" name="email" placeholder="ejemplo@mail.com" required>
-                        
                       </div>
                     </div>
                     <div class="form-group my-2">
                       <label for="message">Mensaje:</label>
                         <textarea class="form-control text-decoration-none" name="message" rows="4" placeholder="Déjame tu mensaje" required></textarea>
-                      
                     </div>
-                    <button class="btn btn-primary mt-2" type="submit">Enviar</button>
+                    <button class="btn btn-primary mt-2 w-25" type="submit">Enviar</button>
                   </form>
                 </div>
               </div>
               <div class="col">
                 <div class="mt-2">
                   <h3 class="h6">Lugar de residencia</h3>
-                  <div class="pb-2 ">Azul, Buenos Aires, Argentina.</div>
+                  <div class="pb-2">Azul, Buenos Aires, Argentina.</div>
                   <h3 class="h6">E-mail</h3>
-                  <div class="pb-2 ">belendefranchi@gmail.com</div>
+                  <div class="pb-2">belendefranchi@gmail.com</div>
                 </div>
               </div>
             </div>
+            <a class="btn btn-primary mt-2 align-self-end back d-flex justify-content-center align-itmes-center" href="#top"><img src="images/flecha-hacia-arrib.png" alt="" width="30"></a>
           </div>
-        </div></div>
-            </div>
-            <footer class="pt-4 pb-4 text-muted text-center d-print-none">
-              <div class="container">
-                <div class="my-3">
-                  <div class="h4">María Belén De Franchi</div>
-                  <div class="footer-nav">
-                    <nav role="navigation">
-                      <ul class="nav justify-content-center gap-1">
-                        <li class="nav-item">
-                          <a class="nav-link" href="https://www.linkedin.com/in/maria-bel%C3%A9n-de-franchi-26b00591/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-                            <img class="icon" src="./images/linkedin.png" width="40" alt="LinkedIn">
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="https://www.facebook.com/belendefranchi/" title="Facebook" target="_blank" rel="noopener noreferrer">
-                            <img class="icon" src="./images/facebook.png" width="40" alt="Facebook">
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="https://www.instagram.com/belendefranchi/" title="Instagram" target="_blank" rel="noopener noreferrer">
-                            <img class="icon" src="./images/instagram.png" width="40" alt="Instagram">
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="https://github.com/Belendefranchi/" title="Github" target="_blank" rel="noopener noreferrer">
-                            <img class="icon" src="./images/github.png" width="40" alt="GitHub">
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
-                </div>
-                <div class="text-small">
-                  <div class="mb-1">&copy; Todos los derechos reservados.</div>
-                </div>
-              </div>
-            </footer>
-            <script src="scripts/main.js"></script>
-          </body>
-        </html>
+        </div>
+      </div>
+    </div>
+    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
+      <div class="container">
+        <div class="my-3">
+          <div class="h4">María Belén De Franchi</div>
+          <div class="footer-nav">
+            <nav role="navigation">
+              <ul class="nav justify-content-center gap-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.linkedin.com/in/maria-bel%C3%A9n-de-franchi-26b00591/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <img class="icon" src="./images/linkedin.png" width="40" alt="LinkedIn">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.facebook.com/belendefranchi/" title="Facebook" target="_blank" rel="noopener noreferrer">
+                    <img class="icon" src="./images/facebook.png" width="40" alt="Facebook">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.instagram.com/belendefranchi/" title="Instagram" target="_blank" rel="noopener noreferrer">
+                    <img class="icon" src="./images/instagram.png" width="40" alt="Instagram">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/Belendefranchi/" title="Github" target="_blank" rel="noopener noreferrer">
+                    <img class="icon" src="./images/github.png" width="40" alt="GitHub">
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="text-small">
+          <div class="mb-1">&copy; Todos los derechos reservados.</div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
